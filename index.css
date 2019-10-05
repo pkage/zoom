@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+
+    height: 500vh;
+}
+
+@media (max-width: 768px) {
+    .lizard {
+        left: -75%;
+    }
+
+}
+
+
+.lizard{
+    position: fixed;
+
+    /* temp 
+    transform: scale(2) translateX(-20%); 
+    transform: scale(6) translateX(-20%) translateY(-5%); */
+}
+
+.lizard__bg, .lizard__jaw {
+    width: auto;
+    height: 100vh;
+}
+
+.lizard__jaw {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+
+
+    /* temp */
+    /* 1030/1919 by 468/1078 */
+    transform-origin: 53.6737884% 43.4137291%;
+}
+
+
+.snake {
+    position: absolute;
+    bottom: 50%;
+    left: 35%;
+
+    transform: scale(0.01)  rotate(100deg);
+    transform-origin: 50% 100%;
+
+}
+
+.snake__bg, .snake__jaw {
+    width: auto;
+    height: 100vh;
+    z-index: 6;
+}
+
+
+.snake__jaw {
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    /* jaw hinge : 1390x1818 of 3454x5183 */
+    transform-origin: 40.2431963% 35.0762107%;
+    transform: rotate(45deg);
+}
+
+
+.dog {
+    position: absolute;
+    left: 40.2431963%;
+    top: 35.0762107%;
+    transform: scale(0.1) rotate(-45deg);
+    transform-origin: 0% 0%;
+    
+}
+
+.dog__bg {
+
+}
+
+
+
