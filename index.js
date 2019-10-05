@@ -63,7 +63,7 @@ const applyAnimation = (anim, p) => anim.seek(anim.duration * p)
 window.onload = function() {
     const updateScrolls = () => {
         // todo: link up
-        const percentage = scrollY / (document.body.scrollHeight - window.innerHeight);
+        const percentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
 
 
         // apply
@@ -77,4 +77,11 @@ window.onload = function() {
     }
 
     window.requestAnimationFrame(updateScrolls)
+
+    applyAnimation(lizard, 0)
+    applyAnimation(lizard_jaw, 0)
+    applyAnimation(snake, 0)
+    applyAnimation(snake_jaw, 0)
+    applyAnimation(dog, 0)
+
 }
