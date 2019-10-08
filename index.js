@@ -66,6 +66,8 @@ const applyAnimation = (anim, p) => anim.seek(anim.duration * p)
 
 
 window.onload = function() {
+    window.scrollY = 0
+
     const updateScrolls = () => {
         // todo: link up
         const percentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
