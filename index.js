@@ -8,6 +8,7 @@ const lizard = anime({
         {scale: 6, translateX: '-20%', translateY: '-5%', duration: 600}
     ],
     duration: 1000,
+    autoplay: false,
     easing: 'linear'
 })
 
@@ -19,6 +20,7 @@ const lizard_jaw = anime({
         {rotate: '45deg', duration: 800}
     ],
     duration: 1000,
+    autoplay: false,
     easing: 'linear'
 })
 
@@ -31,6 +33,7 @@ const snake = anime({
         {duration: 600, scale: 0.4, rotate: '100deg'}
     ],
     duration: 1000,
+    autoplay: false,
     easing: 'linear'
 })
 
@@ -43,6 +46,7 @@ const snake_jaw = anime({
         {duration: 200, rotate: '45deg'},
     ],
     duration: 1000,
+    autoplay: false,
     easing: 'linear'
 })
 
@@ -54,6 +58,7 @@ const dog = anime({
         {duration: 200, scale: 0.1, translateX: 1407.8, translateY: -150.9, rotate: '-465deg'}
     ],
     duration: 1000,
+    autoplay: false,
     easing: 'linear'
 })
 
